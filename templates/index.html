@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <style>
+    body { font-family: sans-serif; max-width: 900px; margin: auto; }
+    img { max-width: 100%; }
+    pre { white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+
+<h1>{{ title }}</h1>
+
+<img src="{{ thumbnail }}" alt="thumbnail">
+
+<ul>
+  <li><strong>投稿者:</strong> {{ uploader }}</li>
+  <li><strong>再生時間:</strong> {{ duration }} 秒</li>
+  <li><strong>再生回数:</strong> {{ view_count }}</li>
+  <li><strong>投稿日:</strong> {{ upload_date }}</li>
+  <li><a href="{{ webpage_url }}" target="_blank">YouTubeで開く</a></li>
+</ul>
+
+<h2>説明</h2>
+<pre>{{ description }}</pre>
+
+</body>
+</html>
